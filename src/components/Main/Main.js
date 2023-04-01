@@ -5,8 +5,7 @@ import './Main.css';
 function Main(props) {
     const { bookList, totalItems } = props;
 
-    const [ index, setIndex ] = useState(0); // Показывает кол-во нажатий на кнопку Ещё
-   console.log(bookList.length);
+    const [ index, setIndex ] = useState(0); // Показывает кол-во нажатий на кнопку More
 
     useEffect(() => {
         props.onMore(index);

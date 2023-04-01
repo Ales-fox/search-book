@@ -5,7 +5,7 @@ import './BookPage.css';
 function BookPage(props) {
     const location = useLocation();
     const { card } = location.state;
-console.log(card);
+
     return (
         <main className='book'>
             <div className='book__img'>

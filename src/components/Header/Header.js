@@ -52,7 +52,7 @@ function Header(props) {
               <button className='search__button text text_white' type='submit' disabled={!formValid}>Search</button>
           </div>
           <div className='search__categories'>
-            <label for='categories' className='text text_white header__label'>Categories</label>
+            <label htmlFor='categories' className='text text_white header__label'>Categories</label>
             <select id='categories' name='categories' className='header__select' value={selectValue.categories} onChange={handleChangeSelectValue}>
                 <option>all</option>
                 <option>art</option>
@@ -62,7 +62,7 @@ function Header(props) {
                 <option>medical</option>
                 <option>poetry</option>
             </select>
-            <label for='sort' className='text text_white header__label'>Sorting by</label>
+            <label htmlFor='sort' className='text text_white header__label'>Sorting by</label>
             <select id='sort' name='sort' className='header__select' value={selectValue.sort} onChange={handleChangeSelectValue}>
               <option>relevance</option>
               <option>newest</option>

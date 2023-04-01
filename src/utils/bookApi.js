@@ -15,5 +15,3 @@ function getResponseData(res) {
 }
 
 export default getAllBooks;
-
-/* return fetch(`https://www.googleapis.com/books/v1/volumes?q=${categories !== 'all' ? 'subject:'+categories+'&' : ''}${searchword}&orderBy=${orderBy}&maxResults=30&startIndex=${index}`, {*/
