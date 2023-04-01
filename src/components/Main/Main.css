@@ -1,0 +1,46 @@
+.main {
+    background-color: white ;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main__cards{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(50px, 0.5fr));
+    grid-gap: 10px 10px;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.main__title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 12px;
+}
+
+.buttonMore{
+    margin: 20px auto;
+    width: 20%;
+    max-width: 200px;
+    height: 40px;
+    font-size: 20px;
+    min-width: 80px;
+    border: none;
+    background: #133363;
+    border-radius: 4px;
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
+    .main__cards{
+        grid-template-columns: repeat(3,minmax(50px, 0.5fr));
+    }
+}
+
+@media screen and (max-width: 700px) {    
+    .buttonMore{
+        font-size: 17px;
+        height: 30px;
+    }
+}

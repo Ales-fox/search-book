@@ -1,0 +1,126 @@
+.book{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    box-sizing: border-box;
+    margin: auto;
+    width: 100%;
+    max-width: 1480px;
+    max-height: 500px;
+}
+
+.book__img{
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    width: 30%;
+}
+
+.img{
+    width: 80%;
+    border-radius: 5px;
+}
+
+.book__information{
+    box-sizing: border-box;
+    padding: 30px 20px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.book__categories{
+    color: rgb(158, 155, 155);
+    border-radius: 5px;
+    text-align: start;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.book__name{
+    text-align: start;
+    font-size: 25px;
+    margin-bottom: 23px;
+}
+
+.book__authors{
+    color: rgb(158, 155, 155);
+    text-align: start;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.book__description{
+    width: 90%;
+    height: 50%;
+    font-size: 17px;
+    text-align: start;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 600px) {
+    .book{
+        flex-direction: column;
+        max-height: 800px;
+    }
+
+    .book__img{
+        margin: auto;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .img{        
+        width: 40%;
+    }
+
+    .book__information{
+        width: 100%;
+    }
+
+    .book__categories{
+        text-align: center;
+    }
+    
+    .book__name{
+        text-align: center;
+    }
+    
+    .book__authors{
+        text-align: center;
+    }
+    
+    .book__description{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .book__img{
+        padding: 10px 5px 5px 5px;
+    }
+
+    .book__information{
+        padding: 5px;
+    }
+
+    .book__categories{
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    
+    .book__name{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .book__authors{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .book__description{
+        font-size: 14px;
+    }
+}

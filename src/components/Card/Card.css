@@ -1,0 +1,53 @@
+.card{
+    background-color: whitesmoke;
+    width: 90%;
+    margin: auto;
+    height: 87%;
+    padding: 20px 10px;
+    border-radius: 15px;
+}
+
+.card__img{
+    width: 150px;
+    height: 230px;
+    border-radius: 10px;
+}
+
+.card__img_no{
+    display: flex;
+    font-size: 12px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__categories{
+    color: rgb(158, 155, 155);
+    text-align: start;
+    font-size: 12px;
+    margin-top: 10px ;
+    height: 12px;    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card__name{
+    text-align: start;
+    font-size: 15px;
+    margin: 5px 0px;
+    max-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card__authors{
+    color: rgb(158, 155, 155);    
+    text-align: start;
+    font-size: 14px;
+}
+
+.link{
+    text-decoration: none;
+}
