@@ -10,6 +10,7 @@ function Main(props) {
 
     useEffect(() => {
         props.onMore(index);
+    // eslint-disable-next-line
     } , [index]) // Реагирует на смену кол-ва нажатий на кнопку ещё
 
     return (
